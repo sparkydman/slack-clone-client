@@ -18,8 +18,8 @@ const ViewTeam = ({
   if (loading) {
     return null;
   }
+  // console.log(allTeams);s
   const teams = [...allTeams, ...invitedTeams];
-  // console.log(teams);
 
   if (!teams.length) {
     return <Redirect to="/create-team" />;
